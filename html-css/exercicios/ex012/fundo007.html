@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+       
+
+       #container{ /* article id */
+        background-image: url('imagens/target001.png'); /*  imagem */
+        background-size: 100% 100% ;  /*  tamaho  */
+          position: relative; /* posicao relativa do texto  */
+          height: 96vh;/* altua */
+          background-color: purple;  /* cor */
+          padding: 10px; /* borda */
+
+          display: flex; /*Possui diversas funções (procurem pela documentação), uma delas é habilitar o manejamento do conteúdo*/
+    justify-content: center; /*Alinhamento horizontal, ou seja, dispensa o "margin: auto"*/
+    align-items: center; /*Alinhamento vertical*/
+        
+       }
+      
+       #conteudo{   /* article id */
+        background-image: url('imagens/target001.png'); /*  imagem */
+        background-size: 100% 100% ;  /*  tamaho  */
+
+        position: absolute; /* posicao absoluta */
+        height: 200px;  /* altura */
+        width: 400px;  /* tamanho */
+        background-color: yellow;  /* cor de fundo */
+
+        left: 50%; /* de lado para o objetivo*/
+        top: 50%; /* de cima para baixo */
+         
+        transform: translate(-50%,-50%); /* alinhameto no meio da tela */
+        
+        
+
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <section id="container"> <!-- divs semasnticas  -->
+       
+        <article id="conteudo">
+
+        </article>
+
+
+    </section>
+    
+</body>
+</html>
