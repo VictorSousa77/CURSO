@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+        table{
+            width: 500px; /* largura da tabela */
+            height: 100px;  /*  tamhod da tabela */
+            border-collapse: collapse; /* uniao da tabela */
+            position: relative;
+        }
+        td,th{
+
+            border: 1px solid black; /* bordas, essencias para criar tabelas */
+            padding: 10px; /* tamaho da taebla  */
+           
+        }
+        thead >tr >th{
+            position: sticky; /* grudou o cabecalho */
+            top: -1px;
+            background-color: rgb(0, 0, 0);
+
+        }
+        thead,tfoot{
+            background-color: rgb(167, 162, 162);
+            color: rgb(255, 255, 255);
+        }
+        tbody >tr:nth-child(2n){ /* efeito zebrado */
+            background-color: rgba(255, 255, 255, 0.486);
+        }
+
+        tfoot{
+            text-align: left;
+        }
+
+        td.num{
+            text-align: right; /* classe criada dentro de td */
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(83, 82, 82);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> iframe</h1>
+    <table>
+        <caption>dados federativos</caption>
+
+        <thead> <!-- cecalho -->
+             
+            <tr>
+                <th scope="col">estado</th> <!-- nome dos estados, iram aparecer no titulo -->
+                <th scope="col" style="width: 100px;">populacao</th> <!-- tambem -->
+
+            </tr>
+
+        </thead> 
+
+        <tbody>  <!-- corpo -->
+            <tr> <!-- separacao dos dados em linhas horizontais  -->
+            <td >sao paulo</td>  <!-- td sao os dados, nomes ou numeros  -->
+            <td class="num">45 919 049</td>
+        </tr>
+        <tr>
+            <td >minas gerais</td>
+            <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td >rio de janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+            <td>manaus</td>
+            <td class="num">234 243 22</td>
+        </tr> 
+        <tr>
+            <td>maranhao</td>
+            <tdclass="num">222 3333 33</td>
+        </tr>
+        <tr>
+            <td>sergipe</td>
+            <td class="num"  >32323333</td>
+        </tr>
+        <tr>
+            <td>alagoas</td>
+            <tdclass="num" >23432334</td>
+
+        </tr>
+        <tr>
+            <td>acre</td>
+            <td class="num">24333434</td>
+
+        </tr>
+        <tr>
+            <td>alemanha</td>
+            <td class="num">324343434</td>
+        </tr>
+        <tr>
+            <td> aracaju</td>
+            <td class="num">2323232323</td>
+        </tr>
+        <tr>
+            <td>sao paulo</td>
+            <td class="num">43443432</td>
+        </tr>
+        <tr>
+            <td>espanha</td>
+            <td class="num">23223232</td>
+        </tr>
+        <tr>
+            <td>houston</td>
+            <td class="num">323232323</td>
+        </tr>
+        <tr>
+            <td>marcelia</td>
+            <td class="num" >323232323</td>
+        </tr>
+        <tr>
+            <td>mananhao</td>
+            <td class="num" >232323223</td>
+        </tr>
+        <tr>
+            <td>alagoas</td>
+            <td class="num"  >2323232</td>
+
+        </tr>
+        <tr>
+            <td>portugal</td>
+            <td class="num">000000000</td>
+        </tr>
+        <tr>
+            <td>franca </td>
+            <td class="num">23232323</td>
+
+        </tr>
+        <tr>
+            <td>andorrra</td>
+            <td class="num">23232323</td>
+            
+            
+        </tr>
+        <tr>
+            <td>bielorussia</td>
+            <td class="num">23232323</td>
+           
+        </tr>
+        <tr>
+            <td>eentiopias</td>
+            <td class="num">23232323</td>
+           
+        </tr>
+        <tr>
+            <td>africa</td>
+            <td class="num">23232323</td>
+           
+        </tr>
+        </tbody>
+
+        <tfoot> <!-- rodape, ultimos dados ou totalizacao deles -->
+                
+            <tr> <!-- marcando sempre a separacao horizintal na tabela como totale de hanitantes \ xxxxx -->
+                <th scope="row">total de haitantes</th> <!-- usa o 5th para colocar a frase -->
+                <td>total de habitantes 0000</td> <!-- td para total de haitantes -->
+            </tr> 
+        </tfoot>
+</body>
+</html>
