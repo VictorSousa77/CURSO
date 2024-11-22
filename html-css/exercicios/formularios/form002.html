@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <div>
+        <label for="iusu">usuario:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="12" placeholder="minimo 5 letras" autocomplete="new-username" />
+        <!-- required\ aparece uma mensagem de obrgatridade -->
+        <!-- minlength\ usado para o maximo de letras nas senhas ou usuarioi -->
+         <!-- maxlength\ maximo de letras para senha ou usari -->
+          <!-- placerhold aparece uma mensasgem dentro da box  -->
+      </div>
+      <br />
+      <div>
+        <label for="isenha">senha</label>
+        <input type="password" name="senha" id="isenha" required  minlength="8" size="12" placeholder="minimo 8 letras" autocomplete="new-password"/>
+      </div>
+      <br />
+      <div><input type="submit" value="enviar" /></div>
+    </form>
+  </body>
+</html>
