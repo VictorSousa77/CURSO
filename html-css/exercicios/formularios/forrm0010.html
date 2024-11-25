@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomulario</title>
+</head>
+<body>
+    <h1>fomularios</h1>
+
+    <form action="cadastro.php" method="get">
+
+   
+
+        <div>
+            <label for="iano">em que ano voce nasceu:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcidade">
+
+        </div>
+
+        <div>
+            <label for="iidade">qual sua idade:</label>
+            <output id="iidade">0</output>
+        </div>
+
+
+
+    <div> 
+        <input type="submit" value="enviar" />
+        <input type="reset" value="limpar" />
+    </div> 
+</form>
+
+
+
+      <script> /* recurso de java script */
+        function(calcidade) {
+            let atual= new Date().getfullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+      </script>
+</body>
+</html>
